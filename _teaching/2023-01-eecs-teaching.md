@@ -1,7 +1,7 @@
 ---
 title: "Course Staff, Tutor"
 collection: teaching
-type: "Teaching"
+type: "Teaching Experience"
 permalink: /teaching/2023-01-eecs-teaching
 venue: "UC Berkeley Electrical Engineering & Computer Sciences (EECS)"
 date: 2023-01-01

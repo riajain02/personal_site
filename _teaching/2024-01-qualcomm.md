@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning Engineer Consultant"
 collection: teaching
-type: "Consulting"
+type: "Research Experience"
 permalink: /teaching/2024-01-qualcomm
 venue: "Qualcomm Institute"
 date: 2024-01-01

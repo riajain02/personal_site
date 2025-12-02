@@ -7,8 +7,28 @@ author_profile: true
 
 {% include base_path %}
 
-<p><a href="https://drive.google.com/file/d/1IcH8FgsqcPjsPM9oLc5Nh0q5b3Z8BJII/view?usp=sharing" target="_blank">View my CV</a></p>
+<p><a href="https://drive.google.com/file/d/1IcH8FgsqcPjsPM9oLc5Nh0q5b3Z8BJII/view?usp=sharing" target="_blank">View my Resume</a></p>
 
-{% for post in site.teaching reversed %}
+<h2>Work Experience</h2>
+{% assign work_experience = site.teaching | where: "type", "Work Experience" %}
+{% for post in work_experience reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+
+<h2>Research Experience</h2>
+{% assign research_experience = site.teaching | where: "type", "Research Experience" %}
+{% for post in research_experience reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+
+<h2>Teaching Experience</h2>
+{% assign teaching_experience = site.teaching | where: "type", "Teaching Experience" %}
+{% for post in teaching_experience reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+
+<h2>Leadership</h2>
+{% assign leadership = site.teaching | where: "type", "Leadership" %}
+{% for post in leadership reversed %}
   {% include archive-single.html %}
 {% endfor %}
